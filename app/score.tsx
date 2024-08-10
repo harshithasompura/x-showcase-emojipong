@@ -1,17 +1,15 @@
-import { StatusBar } from "expo-status-bar";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Pressable } from "react-native";
 import { Link } from "expo-router";
 
-export default function App() {
+export default function Score() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home Page</Text>
-      <Link href="/game" asChild>
+      <Text style={styles.text}>Score Screen</Text>
+      <Link href="/" asChild>
         <Pressable style={styles.button}>
-          <Text style={styles.buttonText}>Start the game</Text>
+          <Text style={styles.buttonText}>Go to Home</Text>
         </Pressable>
       </Link>
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -19,7 +17,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#28D964",
+    backgroundColor: "#45B0FF",
     alignItems: "center",
     justifyContent: "center",
   },
