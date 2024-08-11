@@ -1,10 +1,15 @@
 import { StyleSheet, Text, View, Pressable } from "react-native";
 import { Link } from "expo-router";
+import { useLocalSearchParams } from "expo-router";
+
 
 export default function Game() {
+  const params = useLocalSearchParams();
+  const { selectedEmoji } = params;
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Game Screen</Text>
+      <Text>{selectedEmoji}</Text>
       <Link href="/" asChild>
         <Pressable style={styles.homeButton}>
           <Text style={styles.homeButtonText}>Go to Home</Text>
