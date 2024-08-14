@@ -1,10 +1,15 @@
 import { StyleSheet, Text, View, Pressable } from "react-native";
-import { Link } from "expo-router";
+import { Link, useLocalSearchParams } from "expo-router";
 
 export default function Score() {
+  const params = useLocalSearchParams();
+  const { score, selectedEmoji } = params;
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Score Screen</Text>
+      <Text style={styles.text}>{score} hits</Text>
+      <Text style={styles.text}>{selectedEmoji}</Text>
       <Link href="/" asChild>
         <Pressable style={styles.button}>
           <Text style={styles.buttonText}>Go to Home</Text>
