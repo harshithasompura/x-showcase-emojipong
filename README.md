@@ -6,7 +6,7 @@ This is a mini project inspired by the Emoji Game on Instagram, recreated in `ex
 
 ## 📱 Demo
 
-![Demo GIF](./assets/emoji-game.gif)
+![Demo GIF](./assets/demo-compressed.gif)
 
 ## How to run this project
 
